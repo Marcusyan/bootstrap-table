@@ -1138,9 +1138,9 @@
 	          stickyHeaderOffsetRight = 0;
 	        }
 
-	        this.$stickyContainer.css('top', "".concat(this.options.stickyHeaderOffsetY));
-	        this.$stickyContainer.css('left', "".concat(stickyHeaderOffsetLeft));
-	        this.$stickyContainer.css('right', "".concat(stickyHeaderOffsetRight)); // create scrollable container for header
+	        this.$stickyContainer.css('top', "".concat(this.options.stickyHeaderOffsetY)+'px');
+	        this.$stickyContainer.css('left', "".concat(stickyHeaderOffsetLeft)+'px');
+	        this.$stickyContainer.css('right', "".concat(stickyHeaderOffsetRight)+'px'); // create scrollable container for header
 
 	        this.$stickyTable = $('<table/>');
 	        this.$stickyTable.addClass(this.options.classes); // append cloned header to dom
